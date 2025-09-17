@@ -1,13 +1,20 @@
-import { Container, Link, LinkContainer, LoginButton, Title } from "./styles";
+import logo from "../../assets/logo.png";
+import {
+	HeaderContainer,
+	LoginButton,
+	Logo,
+	NavButtons,
+	ScheduleButton,
+} from "./styles";
 
 export function Header() {
 	return (
-		<Container>
-			<Title>ROTAPADEL</Title>
-			<LinkContainer>
-				<Link>AGENDE UM HORÁRIO</Link>
+		<HeaderContainer>
+			<Logo src={logo}></Logo>
+			<NavButtons>
+				<ScheduleButton>AGENDE UM HORÁRIO</ScheduleButton>
 				<LoginButton>LOGIN</LoginButton>
-			</LinkContainer>
-		</Container>
+			</NavButtons>
+		</HeaderContainer>
 	);
 }

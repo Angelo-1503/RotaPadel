@@ -1,38 +1,53 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-
-export const Container = styled.div`
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+export const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `
 
-export const Title = styled.h1`
-    color: #1f1f1f;
-    font-size: 64px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
+export const Logo = styled.img`
+  width: 200px;
+  height: 40px;
 `
 
-export const LinkContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+export const NavButtons = styled.div`
+  display: flex;
+  gap: 15px;
+  align-items: center;
 `
 
-export const Link = styled.a`
-    color: #1F1F1F;
-    font-family: "Bebas Neue Pro";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 350;
-    line-height: normal;
+export const ScheduleButton = styled.button`
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  
+  &:hover {
+    color: #666;
+  }
 `
 
 export const LoginButton = styled.button`
-    border-radius: 15px;
-    background: #C1EE0F;
+  background: #C1EE0F;
+  border: none;
+  color: #1F1F1F;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+  &:hover {
+    background: #95c555;
+  }
 `
+
+

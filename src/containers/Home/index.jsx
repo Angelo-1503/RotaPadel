@@ -1,11 +1,13 @@
-import { Header } from "../../components/header";
+import Carousel from "react-multi-carousel";
+import { Header } from "../../components/Header";
+import { Container } from "./styles";
 
 export function Home() {
 	return (
-		<div>
+		<Container>
 			<Header />
-
+			<Carousel />
 			<h1> Tela de Home </h1>
-		</div>
+		</Container>
 	);
 }
